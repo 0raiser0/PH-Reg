@@ -1,0 +1,1 @@
+from .DINOv2_value import DistileedDINOv2

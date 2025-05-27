@@ -1,0 +1,11 @@
+**/__pycache__/
+**/**/__pycache__/
+__pycache__/
+
+norm/
+
+trainableweights/
+
+distilledweights/
+
+**.svg
