@@ -4,7 +4,7 @@ Vision Transformers with Self-Distilled Registers (NeurIPS 2025 Spotlight)
 <h5 align="center"> If you like our PH-Reg, please give us a star ⭐ on GitHub for the latest update~
 </h2>
 
-![Teaser Image](image/teaser.jpg)
+![Teaser Image](images/teaser.jpg)
 
 This repository contains the official PyTorch implementation for our **NeurIPS 2025** paper, [Vision Transformers with Self-Distilled Registers](https://arxiv.org/abs/2505.21501).
 
