@@ -1,5 +1,5 @@
 <h2 align="center">
-Vision Transformers with Self-Distilled Registers (🎖️ Accepted as <b>Spotlight</b> 🎖️)
+Vision Transformers with Self-Distilled Registers (NeurIPS 2025 Spotlight)
 </h2>
 <h5 align="center"> If you like our PH-Reg, please give us a star ⭐ on GitHub for the latest update~
 </h2>
