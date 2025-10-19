@@ -48,7 +48,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --multi_gpu --mixed_precision='bf
 ```
 
 ## Demo
-We provide [demo code]() for performing inference and visualization. You can also find a detailed tutorial on the denoising process in the same file.
+We provide [demo code](https://github.com/0raiser0/PH-Reg/blob/main/demo_tutorial.ipynb) for performing inference and visualization. You can also find a detailed tutorial on the denoising process in the same file.
 
 Before using it, please download the distilled CLIP weights from [link](https://drive.google.com/drive/folders/1IfluySwuhvYMoUvtPEI7VxBoXUs-tgCc?usp=sharing).
 
