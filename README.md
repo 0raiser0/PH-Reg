@@ -14,7 +14,6 @@ To train PH-Reg, please install the following packages. We used `Python 3.10` in
 
 ```
 pip install -r requirements_eval.txt
-pip install numpy==1.26.4
 pip install matplotlib scipy scikit-image scikit-learn h5py
 
 pip install openmim
@@ -33,6 +32,7 @@ pip install openai-clip
 pip install opencv-python
 
 pip install yapf==0.40.1
+pip install numpy==1.26.4
 ```
 
 ## Training
@@ -48,23 +48,32 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --multi_gpu --mixed_precision='bf
 ```
 
 ## Demo
-We provide [demo code](https://github.com/0raiser0/PH-Reg/blob/main/demo_tutorial.ipynb) for performing inference and visualization. You can also find a detailed tutorial on the denoising process in the same file.
+We provide [demo code](https://github.com/0raiser0/PH-Reg/blob/main/vis_zero_shot.ipynb) for performing inference and visualization. You can also find a detailed tutorial on the denoising process in the same file.
 
 Before using it, please download the distilled CLIP weights from [link](https://drive.google.com/drive/folders/1IfluySwuhvYMoUvtPEI7VxBoXUs-tgCc?usp=sharing).
+
+## Evaluation
+1. Download the distilled CLIP weights
+
+2. Please follow the [MMSeg data preparation document](https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md) to download and pre-process the datasets.
+
+      **Remember to modify the dataset paths (`data_root`) in the config files in** `./configs/`.
+
+3. To evaluate our approach on a single benchmark, run the following command:
+      ```
+      python eval.py --config ./configs/cfg_{benchmark_name}.py
+      ```
 
 ## Citation
 
 If you find our project useful, please consider citing our paper 📝 and giving a star ⭐.
 
 ```bibtex
-@misc{chen2025visiontransformersselfdistilledregisters,
-      title={Vision Transformers with Self-Distilled Registers}, 
-      author={Yinjie Chen and Zipeng Yan and Chong Zhou and Bo Dai and Andrew F. Luo},
-      year={2025},
-      eprint={2505.21501},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2505.21501}, 
+@article{chen2025vision,
+  title={Vision transformers with self-distilled registers},
+  author={Chen, Yinjie and Yan, Zipeng and Zhou, Chong and Dai, Bo and Luo, Andrew F},
+  journal={arXiv preprint arXiv:2505.21501},
+  year={2025}
 }
 ```
 
