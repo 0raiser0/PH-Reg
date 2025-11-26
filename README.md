@@ -61,7 +61,7 @@ Before using it, please download the distilled CLIP weights from [link](https://
 
 3. To evaluate our approach on a single benchmark, run the following command:
       ```
-      python eval.py --config ./configs/cfg_{benchmark_name}.py
+      python run_eval.py --config ./configs/cfg_{benchmark_name}.py --work-dir ./logs/{benchmark_name}
       ```
 
 ## Citation
