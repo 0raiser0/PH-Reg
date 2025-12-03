@@ -40,15 +40,15 @@ Please download the Flickr30k dataset from https://shannon.cs.illinois.edu/Denot
 
 For a single GPU, please run:
 ```
-python3 distill_main.py --data_root $YOUR_Flickr_PATH$ -- save_dir $YOUR_CHECKPOINT_PATH$ --pretrained_path 'facebook/dinov2-base'
+python3 distill_main.py --data_root $YOUR_Flickr_PATH$ -- save_dir $YOUR_CHECKPOINT_PATH$ --pretrained_path $YOUR_PRETRAINED_PATH$('facebook/dinov2-base', 'ViT-B/16')
 ```
 For multiple GPUs, please run:
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --multi_gpu --mixed_precision='bf16' distill_main.py --data_root $YOUR_Flickr_PATH$ -- save_dir $YOUR_CHECKPOINT_PATH$ --pretrained_path 'facebook/dinov2-base'
+CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --multi_gpu --mixed_precision='bf16' distill_main.py --data_root $YOUR_Flickr_PATH$ -- save_dir $YOUR_CHECKPOINT_PATH$ --pretrained_path $YOUR_PRETRAINED_PATH$('facebook/dinov2-base', 'ViT-B/16')
 ```
 
 ## Demo
-We provide [demo code](https://github.com/0raiser0/PH-Reg/blob/main/vis_zero_shot.ipynb) for performing inference and visualization. You can also find a detailed tutorial on the denoising process in the same file.
+We provide [demo code](https://github.com/0raiser0/PH-Reg/blob/main/CLIP/visualization.ipynb) for performing inference and visualization. You can also find a detailed tutorial on the denoising process in the same file.
 
 Before using it, please download the distilled CLIP weights from [link](https://drive.google.com/drive/folders/1IfluySwuhvYMoUvtPEI7VxBoXUs-tgCc?usp=sharing).
 
