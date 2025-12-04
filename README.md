@@ -38,6 +38,9 @@ pip install numpy==1.26.4
 ## Training
 Please download the Flickr30k dataset from https://shannon.cs.illinois.edu/DenotationGraph/
 
+**Reminder:** Before starting training, please make sure to check your dataset.
+If you’re using text-based images, do not apply the flipping augmentation, as flipping is only appropriate for natural images.
+
 For a single GPU, please run:
 ```
 python3 distill_main.py --data_root $YOUR_Flickr_PATH$ -- save_dir $YOUR_CHECKPOINT_PATH$ --pretrained_path $YOUR_PRETRAINED_PATH$('facebook/dinov2-base', 'ViT-B/16')
