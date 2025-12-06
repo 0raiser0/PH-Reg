@@ -50,6 +50,12 @@ For multiple GPUs, please run:
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --multi_gpu --mixed_precision='bf16' distill_main.py --data_root $YOUR_Flickr_PATH$ -- save_dir $YOUR_CHECKPOINT_PATH$ --pretrained_path $YOUR_PRETRAINED_PATH$('facebook/dinov2-base', 'ViT-B/16')
 ```
 
+## Weights
+| Model Name  | Link |
+|-------------|------|
+| OpenAI CLIP | [link](https://drive.google.com/drive/folders/1IfluySwuhvYMoUvtPEI7VxBoXUs-tgCc?usp=sharing) |
+| DINOv2      | [link](https://drive.google.com/file/d/1PVKODN62ln7_30nVncojzOr_zcElaYFh/view?usp=sharing)   |
+
 ## Demo
 We provide [demo code](https://github.com/0raiser0/PH-Reg/blob/main/CLIP/visualization.ipynb) for performing inference and visualization. You can also find a detailed tutorial on the denoising process in the same file.
 
